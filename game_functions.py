@@ -1,4 +1,5 @@
 """
+Author: Cameron Tee
 The module containing all of the functions to run the game.
 """
 import sys
@@ -61,7 +62,7 @@ def centre_bird(screen, bird):
 def collision_check(screen, settings, bird, pipes, stats):
 	"""
 	Checks if the bird collides with the ground or pipes.
-	Removes the life and sets the game state to inactive.
+	If true, remove the life and set the game state to inactive.
 	"""
 	#Ground collision
 	if bird.y >= bird.max_y:
