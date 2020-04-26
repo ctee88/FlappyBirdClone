@@ -1,4 +1,5 @@
 """
+Author: Cameron Tee
 A class representing the messages for START and GAME OVER conditions.
 Handles the drawing of the desired message based on if the game is active.
 """
@@ -56,6 +57,3 @@ class Messages():
 		Draw game over msg
 		"""
 		self.screen.blit(self.game_over_image, self.game_over_rect)
-		
-		
-
