@@ -1,4 +1,5 @@
 """
+Author: Cameron Tee
 A class storing the settings for flappy bird.
 """
 import pygame
