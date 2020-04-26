@@ -1,4 +1,5 @@
 """
+Author: Cameron Tee
 A class providing the live updates to the player stats: Score and Hiscore.
 Manages the drawing of these updated values to the screen.
 """
@@ -33,7 +34,7 @@ class Scoreboard():
 		self.score_image = self.font.render("SCORE: {}".format(score_str), 
 			True, self.font_colour) 
 			
-		#Positioned in the top left
+		#Positioned top left
 		self.score_rect = self.score_image.get_rect()
 		self.score_rect.left = self.screen_rect.left
 		self.score_rect.top = self.screen_rect.top
@@ -43,7 +44,7 @@ class Scoreboard():
 		self.hiscore_image = self.font.render("HISCORE: {}".format(hiscore_str),
 			True, self.font_colour) #See prep_score()
 			
-		#Positioned in the top right
+		#Positioned top right
 		self.hiscore_rect = self.hiscore_image.get_rect()
 		self.hiscore_rect.right = self.screen_rect.right
 		self.hiscore_rect.top = self.screen_rect.top
@@ -54,5 +55,3 @@ class Scoreboard():
 		"""
 		self.screen.blit(self.score_image, self.score_rect)
 		self.screen.blit(self.hiscore_image, self.hiscore_rect)
-		
-	
