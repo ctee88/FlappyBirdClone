@@ -1,4 +1,5 @@
 """
+Author: Cameron Tee
 A class representing the background object.
 """
 import pygame
