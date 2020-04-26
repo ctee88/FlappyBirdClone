@@ -1,5 +1,5 @@
 # FlappyBirdClone
-Play my version of the famous Flappy BIrd game!
+Play my version of the famous Flappy Bird game!
 
 # Features
 - Player controls a bird to help it navigate through pipes
@@ -13,7 +13,7 @@ Play my version of the famous Flappy BIrd game!
 
 - Created using Python library - PyGame
 
-- Developed on Windows 10. 
+- Developed on Windows 10 
 
 ## Installing instructions for Windows 10
 ### Python 3.8
