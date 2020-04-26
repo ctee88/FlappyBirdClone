@@ -1,4 +1,5 @@
 """
+Author: Cameron Tee
 A class representing the bird object.
 Handles the movement, bird mask and drawing of the bird.
 """
@@ -38,7 +39,7 @@ class Bird():
 	def flap(self):
 		"""
 		Flap method resets the frame count and 
-		the velocity each time it is called 
+		the velocity each time flap() is called 
 		to stop the values of these attributes increasing
 		indefinitely.
 		"""
@@ -52,7 +53,7 @@ class Bird():
 		"""
 		The bird moves based on a unit of time i.e. frame_count.
 		This allows the bird to move a set amount of pixels PER FRAME as opposed 
-		to moving a set amount of pixels PER N FRAMES in clock.tick(N).
+		to moving a set amount of pixels PER N FRAMES in clock.tick(N) (line 51 in main.py).
 		This means that we are able to produce smoother movement for the bird.
 		
 		Updates the bird's pos within the constraints: Not above the screen
@@ -107,4 +108,3 @@ class Bird():
 		Get the mask for the current bird image
 		"""
 		return pygame.mask.from_surface(self.image)
-		
