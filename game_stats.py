@@ -1,4 +1,5 @@
 """
+Author: Cameron Tee
 A class keeping track of the game stats.
 Only one life in Flappy Bird.
 This class controls the game state (whether playing or not).
@@ -25,5 +26,3 @@ class GameStats():
 		"""
 		self.lives_left = self.settings.lives
 		self.score = 0
-		
-		
