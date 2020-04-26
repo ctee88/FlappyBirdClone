@@ -1,4 +1,5 @@
 """
+Author: Cameron Tee
 A class representing the ground class.
 Used to load and draw 2 images to give the
 scrolling effect.
@@ -17,7 +18,7 @@ class Ground():
 		self.image = pygame.image.load("images/ground.png")
 		self.image_width = self.image.get_width()
 		
-		#y pos 
+		#y pos for both images
 		self.y = self.settings.screen_height * 0.8
 		
 		#x pos for first image
@@ -29,7 +30,7 @@ class Ground():
 	def update(self):
 		"""
 		Moves the 2 ground images.
-		Set the pos (x,y) of the image to be off the right side of the
+		Set the x co-ord of the image to be off the right side of the
 		screen when the image moves off the left side.
 		"""
 		self.x0 -= self.settings.ground_speed
@@ -47,5 +48,3 @@ class Ground():
 		"""
 		self.screen.blit(self.image, (self.x0, self.y))
 		self.screen.blit(self.image, (self.x1, self.y))
-		
-	
