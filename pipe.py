@@ -1,4 +1,5 @@
 """
+Author: Cameron Tee
 A class representing the pipe object.
 Handles the movement, collision detection and drawing of the pipes.
 """
@@ -50,7 +51,7 @@ class Pipe():
 	
 	def collide_bird(self, bird):
 		"""
-		Returns if any point of the bird
+		Returns true if any point of the bird
 		collides with any point of the pipes.
 		"""
 		#Get the masks for the bird and the pipes.
