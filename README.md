@@ -1,6 +1,8 @@
 # FlappyBirdClone
 Play my version of the famous Flappy Bird game!
 
+![Gameplay](images/flappy_bird_running.png)
+
 # Features
 - Player controls a bird to help it navigate through pipes
 
